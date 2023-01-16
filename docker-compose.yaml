@@ -1,0 +1,16 @@
+version: '3.7'
+
+services:
+  react18.1.0:
+    container_name: ReactxSpaceX
+    build: .
+    volumes:
+      - .:/front
+      - front_node_modules:/front/node_modules
+    ports:
+      - "3001:3000"
+    environment:
+      - CHOCKIDAR_USEPOLLING=true
+
+volumes:
+  front_node_modules:
