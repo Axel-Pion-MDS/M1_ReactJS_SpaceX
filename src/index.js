@@ -4,6 +4,9 @@ import './index.css';
 import {App} from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {History} from "./components/History";
+import {Launches} from "./components/Launches";
+import {Capsules} from "./components/Capsules";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -11,6 +14,9 @@ root.render(
       <BrowserRouter>
           <Routes>
               <Route path={'/'} element={ <App /> } />
+              <Route path={'/history'} element={ <History /> } />
+              <Route path={'/launches'} element={ <Launches /> } />
+              <Route path={'/capsules'} element={ <Capsules /> } />
           </Routes>
       </BrowserRouter>
   </React.StrictMode>
