@@ -57,7 +57,7 @@ export const Launches = () => {
                                         <Link href={launch.links.article}>
                                             <Button variant={"contained"}>
                                                 <SvgIcon component={SearchIcon} inheritViewBox />
-                                            </Button>   
+                                            </Button>
                                         </Link>
                                     </TableCell>
                                     <TableCell>
