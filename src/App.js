@@ -1,25 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export const App = () => {
+
+    return (
+        <div className={"app"}>
+            <h1>ReactJs x SpaceX</h1>
+            <Stack
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={3}
+            >
+                <Button variant={"contained"} href={"/history"}>History</Button>
+                <Button variant={"contained"} href={"/launches"}>Launches</Button>
+                <Button variant={"contained"} href={"/capsules"}>Capsules</Button>
+            </Stack>
+        </div>
+    )
 }
-
-export default App;
